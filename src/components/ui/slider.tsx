@@ -2,6 +2,7 @@ import * as React from "react"
 import * as SliderPrimitive from "@radix-ui/react-slider"
 
 import { cn } from "@/lib/utils"
+import pfIconWhite from "@/assets/pf-icon-white.png"
 
 const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
@@ -19,7 +20,7 @@ const Slider = React.forwardRef<
       <SliderPrimitive.Range className="absolute h-full rounded-full bg-gradient-to-r from-[#FF4C0A] to-[#FE8A26]" />
     </SliderPrimitive.Track>
     <SliderPrimitive.Thumb className="block h-9 w-9 rounded-full border border-[#FF751D]/50 bg-[#FF751D] shadow-sm transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 relative hover:border-0 active:border-0 focus:border-0 focus:ring-0 focus:outline-none">
-      <img src="https://productfruits.com/images/pf_piktogram_bila.svg" alt="ProductFruits Logo" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6" />
+      <img src={pfIconWhite} alt="ProductFruits Logo" className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6" />
     </SliderPrimitive.Thumb>
   </SliderPrimitive.Root>
 ))
