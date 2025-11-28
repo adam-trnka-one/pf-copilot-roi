@@ -15,7 +15,6 @@ const Index = () => {
                 />
               </div>
               <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out how much Elvin Copilot saves you</h2>
-              <p className="whitespace-nowrap overflow-x-auto mx-auto text-slate-950 px-0 text-lg font-normal">Automatically resolve repetitive support questions with Copilot</p>
             </div>
 
             <div className="mb-8">
