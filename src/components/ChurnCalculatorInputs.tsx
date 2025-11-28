@@ -20,18 +20,6 @@ interface ChurnCalculatorInputsProps {
   handleCustomerCountInputChange: (setter: React.Dispatch<React.SetStateAction<number>>, value: string) => void;
   handleInputChange: (setter: React.Dispatch<React.SetStateAction<number>>, value: string, min: number, max: number) => void;
 }
-
-const handleCustomerStepChange = (
-  currentIndex: number,
-  direction: 'up' | 'down',
-  setSliderByIndex: (index: number) => void
-) => {
-  if (direction === 'up' && currentIndex < CUSTOMER_STEPS.length - 1) {
-    setSliderByIndex(currentIndex + 1);
-  } else if (direction === 'down' && currentIndex > 0) {
-    setSliderByIndex(currentIndex - 1);
-  }
-};
 const InfoTooltip = ({
   content
 }: {
@@ -78,16 +66,8 @@ const ChurnCalculatorInputs = ({
               value={customerCount} 
               min={CUSTOMER_STEPS[0]} 
               max={CUSTOMER_STEPS[CUSTOMER_STEPS.length - 1]} 
+              step="100"
               onChange={e => handleCustomerCountInputChange(setCustomerCount, e.target.value)} 
-              onKeyDown={(e) => {
-                if (e.key === 'ArrowUp') {
-                  e.preventDefault();
-                  handleCustomerStepChange(customerSliderIndex, 'up', setSliderByIndex);
-                } else if (e.key === 'ArrowDown') {
-                  e.preventDefault();
-                  handleCustomerStepChange(customerSliderIndex, 'down', setSliderByIndex);
-                }
-              }}
               className="w-20" 
             />
           </div>

@@ -1,33 +1,14 @@
-// Predefined customer steps for the slider
-export const CUSTOMER_STEPS = [
-  50,
-  ...Array.from({
-    length: (1000 - 100) / 100 + 1
-  }, (_, i) => 100 + i * 100),
-  ...Array.from({
-    length: (5000 - 1000) / 500 + 1
-  }, (_, i) => 1000 + (i + 1) * 500),
-  ...Array.from({
-    length: (20000 - 5000) / 1000
-  }, (_, i) => 5000 + (i + 1) * 1000)
-];
+// Predefined customer steps for the slider - simple increments of 100
+export const CUSTOMER_STEPS = Array.from(
+  { length: 201 }, // 0 to 20000 in steps of 100
+  (_, i) => i * 100
+).filter(v => v >= 50); // Start from 50
 
 /**
- * Snaps a customer count value to the nearest predefined step
+ * Snaps a customer count value to the nearest 100
  */
 export function snapToNearestCustomerStep(value: number): number {
-  let closest = CUSTOMER_STEPS[0];
-  let minDiff = Math.abs(value - closest);
-
-  for (const step of CUSTOMER_STEPS) {
-    const diff = Math.abs(step - value);
-    if (diff < minDiff) {
-      minDiff = diff;
-      closest = step;
-    }
-  }
-
-  return closest;
+  return Math.round(value / 100) * 100;
 }
 
 /**
