@@ -14,7 +14,7 @@ const Index = () => {
                   className="mx-auto h-12 mb-6"
                 />
               </div>
-              <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out how much Elvin Copilot saves you</h2>
+              <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out what Elvin Copilot does for your bottom line</h2>
             </div>
 
             <div className="mb-8">
