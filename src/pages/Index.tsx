@@ -11,7 +11,7 @@ const Index = () => {
                 <img 
                   src={pfLogo}
                   alt="Product Fruits" 
-                  className="mx-auto h-12 mb-6"
+                  className="mx-auto h-12 mb-12"
                 />
               </div>
               <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out what Elvin Copilot does for your bottom line</h2>
