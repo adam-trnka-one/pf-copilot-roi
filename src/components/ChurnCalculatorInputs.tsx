@@ -66,6 +66,7 @@ const ChurnCalculatorInputs = ({
               value={customerCount} 
               min={CUSTOMER_STEPS[0]} 
               max={CUSTOMER_STEPS[CUSTOMER_STEPS.length - 1]} 
+              step="100"
               onChange={e => handleCustomerCountInputChange(setCustomerCount, e.target.value)} 
               className="w-20" 
             />
