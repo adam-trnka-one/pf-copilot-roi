@@ -61,7 +61,14 @@ const ChurnCalculatorInputs = ({
           </div>
           <div className="flex items-center gap-4">
             <Slider id="customer-count" min={0} max={CUSTOMER_STEPS.length - 1} step={1} value={[customerSliderIndex]} onValueChange={([index]) => setSliderByIndex(index)} className="flex-1" />
-            <Input type="number" value={customerCount} min={CUSTOMER_STEPS[0]} max={CUSTOMER_STEPS[CUSTOMER_STEPS.length - 1]} step="100" onChange={e => handleCustomerCountInputChange(setCustomerCount, e.target.value)} className="w-20" />
+            <Input 
+              type="number" 
+              value={customerCount} 
+              min={CUSTOMER_STEPS[0]} 
+              max={CUSTOMER_STEPS[CUSTOMER_STEPS.length - 1]} 
+              onChange={e => handleCustomerCountInputChange(setCustomerCount, e.target.value)} 
+              className="w-20" 
+            />
           </div>
         </div>
 
