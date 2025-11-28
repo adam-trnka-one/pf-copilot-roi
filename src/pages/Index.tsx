@@ -14,7 +14,7 @@ const Index = () => {
                   className="mx-auto h-12 mb-6"
                 />
               </div>
-              <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out how much Support Copilot saves you</h2>
+              <h2 className="text-3xl text-gray-900 mb-4 font-semibold md:text-4xl">Find out how much Elvin Copilot saves you</h2>
               <p className="whitespace-nowrap overflow-x-auto mx-auto text-slate-950 px-0 text-lg font-normal">Automatically resolve repetitive support questions with Copilot</p>
             </div>
 
@@ -38,7 +38,7 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="text-orange-500 hover:text-orange-600 underline font-medium"
                   >
-                    Support Copilot
+                    Elvin Copilot
                   </a>
                   {" "}or book your 1-on-1{" "}
                   <a 

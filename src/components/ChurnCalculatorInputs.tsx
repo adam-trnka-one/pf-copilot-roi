@@ -67,7 +67,7 @@ const ChurnCalculatorInputs = ({
 
         <div className="calculator-input">
           <div className="flex items-center justify-between">
-            <Label htmlFor="revenue-per-customer" className="calculator-label">Support Copilot resolution rate</Label>
+            <Label htmlFor="revenue-per-customer" className="calculator-label">Elvin Copilot resolution rate</Label>
             <InfoTooltip content="Most teams see a 50 to 80% resolution rate, depending on product complexity and the quality of documentation. A resolution means the end-user got what they needed without human support." />
           </div>
           <div className="flex items-center gap-4">
